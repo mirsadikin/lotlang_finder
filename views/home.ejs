@@ -1,0 +1,59 @@
+<%- include('header') -%>
+<div class="container">
+  <br />
+
+  <div class="col-6 offset-sm-3">
+    <h1> Long Lat Finder</h1>
+    <a class="btn btn-success" href="https://www.latlong.net/convert-address-to-lat-long.html"> Search for places here</a>
+    <hr />
+    <form action='/' method='POST'>
+      <div class="form-group">
+        <input class="form-control" type="text" name="name" placeholder="name">
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <input class="form-control" type="text" name="lat" placeholder="lat">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input class="form-control" type="text" name="lng" placeholder="long">
+          </div>
+        </div>
+      </div>
+        <button class="btn btn-primary" type='submit'>Create Post</button>
+    </form>
+    <br />
+
+    <br />
+    <hr />
+    <br />
+    <h2> Search your long lat</h2>
+    <form action='/search' method="POST">
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <input class="form-control" type="text" name="lat" placeholder="lat">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <input class="form-control" type="text" name="lng" placeholder="long">
+          </div>
+        </div>
+      </div>
+        <button class="btn btn-primary" type='submit'>Search</button>
+    </form>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+
+<%- include('footer') -%>
